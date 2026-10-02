@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Checkout | Toristhetics</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./cart.css" />
+		<link rel="stylesheet" href="./checkout.css" />
+		<script src="./checkout.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<img src="./images/logo.png" alt="Toristhetics logo" />
+				<h2>Toristhetics</h2>
+			</div>
+			<ul>
+				<li><a href="./index.html#home">Home</a></li>
+				<li><a href="./index.html#shop">shop</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+			<button class="cartBtn" id="cart-navigation" type="button">
+				<img src="./images/icons8-shopping-cart-48.png" alt="" />
+				Cart
+				<span class="cart-count" hidden>0</span>
+			</button>
+		</nav>
+		<main class="checkout-page">
+			<a class="back-link" href="./index.html?cart=open">&larr; Back to Cart</a>
+
+			<form class="checkout-form" id="checkout-form">
+				<section class="details-column" aria-labelledby="details-heading">
+					<h1 id="details-heading">Your Details</h1>
+
+					<div class="form-field">
+						<label for="full-name">Full Name <span>*</span></label>
+						<input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="Jane Doe" required />
+					</div>
+
+					<div class="form-field">
+						<label for="email">Email Address <span>*</span></label>
+						<input id="email" name="email" type="email" autocomplete="email" placeholder="jane@example.com" required />
+					</div>
+
+					<div class="form-field">
+						<label for="phone">Phone Number</label>
+						<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+234 800 000 0000" />
+					</div>
+
+					<div class="form-field">
+						<label for="address">Delivery Address <span>*</span></label>
+						<input id="address" name="address" type="text" autocomplete="street-address" placeholder="123 Main Street, City, Province" required />
+					</div>
+				</section>
+
+				<section class="summary-column" aria-labelledby="summary-heading">
+					<h2 id="summary-heading">Order Summary</h2>
+					<div class="summary-card">
+						<div class="summary-items" id="summary-items" aria-live="polite"></div>
+						<div class="summary-totals">
+							<div class="summary-line">
+								<span>Subtotal</span>
+								<span id="subtotal">$0.00</span>
+							</div>
+							<div class="summary-line">
+								<span>Shipping</span>
+								<span class="free-shipping">Free</span>
+							</div>
+							<div class="summary-line total-line">
+								<strong>Total</strong>
+								<strong id="total">$0.00</strong>
+							</div>
+						</div>
+					</div>
+
+					<button class="place-order-btn" id="place-order" type="submit">
+						<span>Place Order &amp; Pay</span>
+						<span class="card-icon" aria-hidden="true"></span>
+					</button>
+					<p class="payment-note">By placing your order, you agree to send proof of payment within 24 hours.</p>
+					<p class="checkout-status" id="checkout-status" role="status" aria-live="polite"></p>
+					<a class="whatsapp-link" id="whatsapp-link" hidden target="_blank" rel="noopener noreferrer">Open WhatsApp to confirm your order</a>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

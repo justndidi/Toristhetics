@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toristhetics</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./cart.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="Toristhetics logo" />
+        <h2>Toristhetics</h2>
+      </div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <button class="cartBtn">
+        <img src="./images/icons8-shopping-cart-48.png" alt="" />
+        Cart
+        <span class="cart-count" hidden>0</span>
+      </button>
+    </nav>
+    <header>
+      <div class="cart">
+        <aside class="cartDrawer">
+          <div class="cart-content">
+            <h2>Your Cart</h2>
+            <!--products will be added-->
+            <div class="cart-items"></div>
+
+            <div class="empty-cart">
+              <img src="./images/icons8-shopping-cart-48.png" alt="" />
+              <h3>Your cart is empty</h3>
+              <p>Add some gorgeous lashes</p>
+            </div>
+
+            <!--cart buttom-->
+            <div class="cart-footer">
+              <div class="subtotal">
+                <span>Subtotal</span>
+                <strong class="cart-total">$0.00</strong>
+              </div>
+              <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="cart-toast"></div>
+
+      <div id="home" class="header-content">
+        <!-- Decorative circles -->
+        <div class="hero-circle hero-circle-left"></div>
+        <div class="hero-circle hero-circle-right"></div>
+
+        <div class="header-content-div">
+          <div class="premium">
+            <img src="./images/icons8-sparkles-100.png" alt="" />
+            <span>Premium Cluster Lashes</span>
+          </div>
+
+          <h1>
+            Lashes That<br />
+            <span>Speak</span> For<br />
+            Themselves.
+          </h1>
+
+          <p class="text">
+            Handpicked cluster lashes for every mood — from barely-there natural
+            to full-on drama. Reusable, comfortable, and
+            <b>made for queens.</b>
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#shop" class="shop-btn">Shop Now</a>
+            <a href="./contact.html" class="contact">Contact Us</a>
+          </div>
+
+          <div class="rating">
+            <p>
+              <span>500+</span>
+              <small>Happy Customers</small>
+            </p>
+
+            <p>
+              <span>6</span>
+              <small>Lash Styles</small>
+            </p>
+
+            <p>
+              <span>100%</span>
+              <small>Cruelty Free</small>
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="./images/starter-lash-image.avif"
+            alt="Model wearing Toristhetics lashes"
+            class="lash"
+          />
+
+          <div class="starting-price">
+            <small>Starting from</small>
+            <strong>$9.99</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="shop" class="first-section">
+        <div>
+          <div class="first-section-text">
+            <span>Our Collection</span>
+            <h2>Find Your Perfect Lash</h2>
+            <p>
+              Every set is reusable up to 20 wears. Apply in minutes,<br />
+              look stunning all day.
+            </p>
+          </div>
+          <div class="grid">
+            <div class="grid-box">
+              <div class="product-image">
+                <img
+                  src="./images/natural wisp.avif"
+                  alt="Natural Wisp Clusters"
+                />
+                <span class="product-badge">Bestseller</span>
+              </div>
+              <div class="grid-box-content">
+                <h3>Natural Wisp Clusters</h3>
+                <p>Feather-light, everyday glam</p>
+                <div>
+                  <h2>$12.99</h2>
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-id="1"
+                    data-name="Natural Wisp Clusters"
+                    data-price="12.99"
+                    data-image="./images/natural wisp.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-box">
+              <div class="product-image">
+                <img
+                  src="./images/dramatic volume.avif"
+                  alt="Dramatic Volume Set"
+                />
+                <span class="product-badge">Fan Fave</span>
+              </div>
+              <div class="grid-box-content">
+                <h3>Dramatic Volume Set</h3>
+                <p>Full, bold lashes for a night out</p>
+                <div>
+                  <h2>$17.99</h2>
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-id="2"
+                    data-name="Dramatic Volume Set"
+                    data-price="17.99"
+                    data-image="./images/dramatic volume.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-box">
+              <div class="product-image">
+                <img src="./images/Fluttery.avif" alt="Fluttery Cat-Eye Kit" />
+              </div>
+              <div class="grid-box-content">
+                <h3>Fluttery Cat-Eye Kit</h3>
+                <p>Lifted ends, feline finish</p>
+                <div>
+                  <h2>$15.99</h2>
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-id="3"
+                    data-name="Fluttery Cat-Eye Kit"
+                    data-price="15.99"
+                    data-image="./images/Fluttery.avif"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-box">
+              <div class="product-image">
+                <img
+                  src="./images/mixed length.avif"
+                  alt="Mixed Length Bundle"
+                />
+              </div>
+              <div class="grid-box-content">
+                <h3>Mixed Length Bundle</h3>
+                <p>Multi-length for dimension &amp; depth</p>
+                <div>
+                  <h2>$22.99</h2>
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-id="4"
+                    data-name="Mixed Length Bundle"
+                    data-price="22.99"
+                    data-image="./images/mixed length.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-box">
+              <div class="product-image">
+                <img src="./images/Full Glam.avif" alt="Full Glam Mega Set" />
+                <span class="product-badge">Best Value</span>
+              </div>
+              <div class="grid-box-content">
+                <h3>Full Glam Mega Set</h3>
+                <p>6 styles, endless looks</p>
+                <div>
+                  <h2>$38.99</h2>
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-id="5"
+                    data-name="Full Glam mega Set"
+                    data-price="38.99"
+                    data-image="./images/Full Glam.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-box">
+              <div class="product-image">
+                <img
+                  src="./images/natural wisp.avif"
+                  alt="Starter Cluster Kit"
+                />
+              </div>
+              <div class="grid-box-content">
+                <h3>Starter Cluster Kit</h3>
+                <p>Perfect for beginners</p>
+                <div>
+                  <h2>$9.99</h2>
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-id="6"
+                    data-name="Starter Cluster Kit"
+                    data-price="9.99"
+                    data-image="./images/natural wisp.avif"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="second-section">
+        <div>
+          <h2>Why Choose Toristhetics?</h2>
+          <div class="second-section-box">
+            <div class="box">
+              <img src="" alt="" />
+              <h3>Premium Quality</h3>
+              <p>
+                Each Cluster is crafted from ultra-fine <br />fibres that mimic
+                real lashes.
+              </p>
+            </div>
+            <div class="box">
+              <img src="" alt="" />
+              <h3>Reusable Up to 20x</h3>
+              <p>
+                Eco-friendly and wallet-friendly — one <br />set, endless looks.
+              </p>
+            </div>
+            <div class="box">
+              <img src="" alt="" />
+              <h3>Fast Delivery</h3>
+              <p>
+                Orders dispatched within 24 hours.<br />
+                Track your glam in real time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div class="footer-header">
+          <span>T</span>
+          <h2>Toristhetics</h2>
+        </div>
+        
+        <span>Premium Cluster Lashes · Nigeria</span>
+        <p>&copy 2026 Toristhetics. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Toristhetics</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="Toristhetics logo" />
+        <h2>Toristhetics</h2>
+      </div>
+      <ul>
+        <li><a href="./index.html#home">Home</a></li>
+        <li><a href="./index.html#shop">Shop</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <button class="cartBtn">
+        <img src="./images/icons8-shopping-cart-48.png" alt="" />
+        Cart
+        <span class="cart-count" hidden>0</span>
+      </button>
+    </nav>
+    <div class="cart">
+      <aside class="cartDrawer">
+        <div class="cart-content">
+          <h2>Your Cart</h2>
+          <div class="cart-items"></div>
+          <div class="empty-cart">
+            <img src="./images/icons8-shopping-cart-48.png" alt="" />
+            <h3>Your cart is empty</h3>
+            <p>Add some gorgeous lashes</p>
+          </div>
+          <div class="cart-footer">
+            <div class="subtotal">
+              <span>Subtotal</span>
+              <strong class="cart-total">$0.00</strong>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <div class="cart-toast"></div>
+    <main class="contact-page">
+      <a class="back-link" href="./index.html">&larr; Back to Shop</a>
+
+      <header class="contact-header">
+        <span class="contact-eyebrow">Get in Touch</span>
+        <h1>We'd Love to Hear From You</h1>
+        <p>Questions about your order or have a custom request? We're here for you.</p>
+      </header>
+
+      <div class="contact-layout">
+        <section class="contact-info" aria-label="Contact information">
+          <a class="contact-card" href="https://wa.me/2348154876790" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon contact-symbol" aria-hidden="true">WA</span>
+            <span class="contact-card-copy">
+              <strong class="contact-label">WhatsApp</strong>
+              <span class="contact-value">+234 815 487 6790</span>
+              <span class="contact-note">Reply within 24 hours</span>
+            </span>
+          </a>
+
+          <a class="contact-card" href="mailto:smithglory019@gmail.com">
+            <span class="contact-icon contact-symbol" aria-hidden="true">@</span>
+            <span class="contact-card-copy">
+              <strong class="contact-label">Email</strong>
+              <span class="contact-value">smithglory019@gmail.com</span>
+              <span class="contact-note">Reply within 24 hours</span>
+            </span>
+          </a>
+
+          <div class="contact-card">
+            <span class="contact-icon contact-symbol" aria-hidden="true">IG</span>
+            <span class="contact-card-copy">
+              <strong class="contact-label">Instagram</strong>
+              <span class="contact-value">+234 815 487 6790</span>
+              <span class="contact-note">DMs open!</span>
+            </span>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon contact-symbol" aria-hidden="true">NG</span>
+            <span class="contact-card-copy">
+              <strong class="contact-label">Location</strong>
+              <span class="contact-value">Nigeria</span>
+              <span class="contact-note">Nationwide delivery</span>
+            </span>
+          </div>
+
+          <section class="business-hours" aria-labelledby="business-hours-heading">
+            <h2 id="business-hours-heading">Business Hours</h2>
+            <dl>
+              <div><dt>Monday - Saturday</dt><dd>8:00 AM - 6:00 PM</dd></div>
+              <div><dt>Sunday</dt><dd>10:00 AM - 3:00 PM</dd></div>
+            </dl>
+          </section>
+        </section>
+
+        <section class="message-panel" aria-labelledby="message-heading">
+          <h2 id="message-heading">Send a Message</h2>
+          <form class="contact-form" action="mailto:smithglory019@gmail.com" method="post" enctype="text/plain">
+            <div class="form-field">
+              <label for="contact-name">Your Name</label>
+              <input id="contact-name" name="Name" type="text" autocomplete="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email Address</label>
+              <input id="contact-email" name="Email" type="email" autocomplete="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="Message" rows="5" placeholder="Tell us how we can help" required></textarea>
+            </div>
+            <button type="submit">Send a Message</button>
+            <p class="form-note">Your message will open in your email app so you can send it directly.</p>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div class="footer-header">
+          <span>T</span>
+          <h2>Toristhetics</h2>
+        </div>
+        <p>Premium Cluster Lashes · Nigeria</p>
+        <p>&copy 2026 Toristhetics. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
